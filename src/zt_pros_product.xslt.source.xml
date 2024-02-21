@@ -1,0 +1,31 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:def="http://www.sap.com/abapxml/types/defined">
+  <tt:root name="ROOT" type="?"/>
+  <tt:root name="PRODUCT" type="ddic:ZTT_PROS_PRODUCT"/>
+  <tt:template>
+    <PRODUCT>
+      <tt:loop ref=".PRODUCT">
+        <ZES_PROS_PRODUCT>
+          <PROD_GROUP tt:value-ref="PROD_GROUP"/>
+          <PROD_GROUP_DESC tt:value-ref="PROD_GROUP_DESC"/>
+          <PROD_LINE tt:value-ref="PROD_LINE"/>
+          <PROD_LINE_DESC tt:value-ref="PROD_LINE_DESC"/>
+          <BASE_PROD tt:value-ref="BASE_PROD"/>
+          <BASE_PROD_DESC tt:value-ref="BASE_PROD_DESC"/>
+          <PACK_TYPE tt:value-ref="PACK_TYPE"/>
+          <PACK_TYPE_DESC tt:value-ref="PACK_TYPE_DESC"/>
+          <PRODUCT tt:value-ref="PRODUCT"/>
+          <PRODUCT_DESC tt:value-ref="PRODUCT_DESC"/>
+          <CUST_SPEC tt:value-ref="CUST_SPEC"/>
+          <ACTIVE_FLAG tt:value-ref="ACTIVE_FLAG"/>
+          <STOCK_FLAG tt:value-ref="STOCK_FLAG"/>
+          <PROD_CODE tt:value-ref="PROD_CODE"/>
+          <GRADE tt:value-ref="GRADE"/>
+          <PREFERRED_UOM_CODE tt:value-ref="PREFERRED_UOM_CODE"/>
+          <DELETE_FLAG tt:value-ref="DELETE_FLAG"/>
+          <EXTRACTION_TIME tt:value-ref="EXTRACTION_TIME"/>
+        </ZES_PROS_PRODUCT>
+      </tt:loop>
+    </PRODUCT>
+  </tt:template>
+</tt:transform>

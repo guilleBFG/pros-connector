@@ -1,0 +1,29 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:def="http://www.sap.com/abapxml/types/defined">
+  <tt:root name="ROOT" type="?"/>
+  <tt:root name="CUSTOMER" type="ddic:ZTT_PROS_CUSTOMER"/>
+  <tt:template>
+    <IF_CUSTOMER_Set>
+      <tt:loop ref=".CUSTOMER">
+        <IF_CUSTOMER_Record>
+          <PARENT_CUST tt:value-ref="PARENT_CUST"/>
+          <PARENT_CUST_DESC tt:value-ref="PARENT_CUST_DESC"/>
+          <ACCOUNT tt:value-ref="ACCOUNT"/>
+          <ACCOUNT_DESC tt:value-ref="ACCOUNT_DESC"/>
+          <CUST_GROUP tt:value-ref="CUST_GROUP"/>
+          <CUST_GROUP_DESC tt:value-ref="CUST_GROUP_DESC"/>
+          <CUSTOMER tt:value-ref="CUSTOMER"/>
+          <CUSTOMER_DESC tt:value-ref="CUSTOMER_DESC"/>
+          <SOLD_TO_CUST tt:value-ref="SOLD_TO_CUST"/>
+          <SHIP_TO_CUST tt:value-ref="SHIP_TO_CUST"/>
+          <CUST_TYPE tt:value-ref="CUST_TYPE"/>
+          <AREA tt:value-ref="AREA"/>
+          <INDUSTRY tt:value-ref="INDUSTRY"/>
+          <PREFERRED_CURRENCY_CODE tt:value-ref="PREFERRED_CURRENCY_CODE"/>
+          <DELETE_FLAG tt:value-ref="DELETE_FLAG"/>
+          <Extraction_Time tt:value-ref="EXTRACTION_TIME"/>
+        </IF_CUSTOMER_Record>
+      </tt:loop>
+    </IF_CUSTOMER_Set>
+  </tt:template>
+</tt:transform>

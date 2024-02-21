@@ -1,0 +1,69 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:def="http://www.sap.com/abapxml/types/defined">
+  <tt:root name="ROOT" type="?"/>
+  <tt:root name="CONDITION_DATA" type="ddic:ZTT_PROS_CONDITION_DATA"/>
+  <tt:template>
+    <Cond_Tbl_Data_Set>
+      <tt:loop ref=".CONDITION_DATA">
+        <Cond_Tbl_Data_Record>
+          <ACTION tt:value-ref="ACTION"/>
+          <BASE_PER_QUANTITY tt:value-ref="BASE_PER_QUANTITY"/>
+          <BASE_UOM_CODE tt:value-ref="BASE_UOM_CODE"/>
+          <CONDITION_TABLE_ID tt:value-ref="CONDITION_TABLE_ID"/>
+          <CONDITION_TYPE tt:value-ref="CONDITION_TYPE"/>
+          <CONDITION_VALUE tt:value-ref="CONDITION_VALUE"/>
+          <CURRENCY_CODE tt:value-ref="CURRENCY_CODE"/>
+          <ELEMENT_RECORD>
+            <tt:loop ref="ELEMENT_RECORD">
+              <ZES_PROS_ELEMENT_RECORD>
+                <CURRENCY_CODE tt:value-ref="CURRENCY_CODE"/>
+                <NAME tt:value-ref="NAME"/>
+                <STRING_VALUE tt:value-ref="STRING_VALUE"/>
+                <TYPE tt:value-ref="TYPE"/>
+                <VALUE tt:value-ref="VALUE"/>
+              </ZES_PROS_ELEMENT_RECORD>
+            </tt:loop>
+          </ELEMENT_RECORD>
+          <END_SERVICE_DATE tt:value-ref="END_SERVICE_DATE"/>
+          <EXTRACTION_TIME tt:value-ref="EXTRACTION_TIME"/>
+          <FORMULA_RECORD>
+            <tt:loop ref="FORMULA_RECORD">
+              <ZES_PROS_FORMULA_RECORD>
+                <ADDER tt:value-ref="ADDER"/>
+                <AVSB_RULE tt:value-ref="AVSB_RULE"/>
+                <AVSB_TERM tt:value-ref="AVSB_TERM"/>
+                <FACTOR_ONE tt:value-ref="FACTOR_ONE"/>
+                <FACTOR_RULE tt:value-ref="FACTOR_RULE"/>
+                <FACTOR_TWO tt:value-ref="FACTOR_TWO"/>
+                <INDEX_NAME tt:value-ref="INDEX_NAME"/>
+              </ZES_PROS_FORMULA_RECORD>
+            </tt:loop>
+          </FORMULA_RECORD>
+          <FORMULA_RULE>
+            <tt:loop ref="FORMULA_RULE">
+              <ZES_PROS_FORMULA_RULE>
+                <REFERENCE_DATA_CODE tt:value-ref="REFERENCE_DATA_CODE"/>
+                <VALUE tt:value-ref="VALUE"/>
+              </ZES_PROS_FORMULA_RULE>
+            </tt:loop>
+          </FORMULA_RULE>
+          <KEY_VALUES tt:value-ref="KEY_VALUES"/>
+          <SCALE_RECORD>
+            <tt:loop ref="SCALE_RECORD">
+              <ZES_PROS_SCALE_RECORD>
+                <SCALE_QUANTITY tt:value-ref="SCALE_QUANTITY"/>
+                <SCALE_VALUE tt:value-ref="SCALE_VALUE"/>
+              </ZES_PROS_SCALE_RECORD>
+            </tt:loop>
+          </SCALE_RECORD>
+          <SCALE_CURRENCY_CODE tt:value-ref="SCALE_CURRENCY_CODE"/>
+          <SCALE_UOM_CODE tt:value-ref="SCALE_UOM_CODE"/>
+          <START_SERVICE_DATE tt:value-ref="START_SERVICE_DATE"/>
+          <UPDATED_BY tt:value-ref="UPDATED_BY"/>
+          <VALID_FROM_DATE tt:value-ref="VALID_FROM_DATE"/>
+          <VALID_TO_DATE tt:value-ref="VALID_TO_DATE"/>
+        </Cond_Tbl_Data_Record>
+      </tt:loop>
+    </Cond_Tbl_Data_Set>
+  </tt:template>
+</tt:transform>

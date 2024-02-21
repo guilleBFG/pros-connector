@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_PROS_INTERFACE_OUT</CLSNAME>
+    <LANGU>S</LANGU>
+    <DESCRIPT>Interface out</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>EXTRACT</CMPNAME>
+     <SCONAME>IT_CHANGED_ON</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Structure for PROS connector</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXTRACT</CMPNAME>
+     <SCONAME>IT_CREATED_ON</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Structure for PROS connector</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EXTRACT</CMPNAME>
+     <SCONAME>ZCX_PROS_EXCEPTION</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Exceptions for PROS connector</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <SCONAME>IV_MSGID</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Clase de mensajes</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <SCONAME>IV_MSGNO</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Número de mensaje</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <SCONAME>IV_MSGTY</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Tipo de mensaje</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <SCONAME>IV_MSGV1</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Variable de mensaje</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <SCONAME>IV_MSGV2</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Variable de mensaje</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <SCONAME>IV_MSGV3</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Variable de mensaje</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG</CMPNAME>
+     <SCONAME>IV_MSGV4</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Variable de mensaje</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RUN</CMPNAME>
+     <SCONAME>IT_CHANGED_ON</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Structure for PROS connector</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RUN</CMPNAME>
+     <SCONAME>IT_CREATED_ON</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Structure for PROS connector</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RUN</CMPNAME>
+     <SCONAME>ZCX_PROS_EXCEPTION</SCONAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Exceptions for PROS connector</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
